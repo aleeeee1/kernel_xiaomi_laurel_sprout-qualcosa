@@ -183,6 +183,7 @@ struct fts_ts_data {
 	int overlap_area;
 	struct notifier_block fb_notif;
 	struct notifier_block dsi_lowpower_notif;
+	int double_tap_pressed;
 };
 
 struct fts_mode_switch {

@@ -14,8 +14,8 @@ ROM_PATH="/mnt/QuickBoi/LineageOS/21"
 # Check if CLANG_DIR exists, if not try alternative paths
 if [ -d "$ROM_PATH/prebuilts/clang/host/linux-x86/$CLANG_VER" ]; then
     CLANG_DIR="$ROM_PATH/prebuilts/clang/host/linux-x86/$CLANG_VER"
-elif [ -d "$HOME/toolchains/neutron-clang" ]; then
-    CLANG_DIR="$HOME/toolchains/neutron-clang"
+elif [ -d "/workspace/toolchains/neutron-clang" ]; then
+    CLANG_DIR="/workspace/toolchains/neutron-clang"
 else
     echo -e "${RED}Could not find the specified clang directory.${DEFAULT}"
     exit 1
